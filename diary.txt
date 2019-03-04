@@ -1,0 +1,91 @@
++----------+-------+-------+---------------------+-------------------------------------------+
+|   Date   | Start | Stop  | Activity            | Comments                                  |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 20/09/18 | 15:00 | 15:30 | coding & debugging  | implemented command init empty legit      |
+|          |       |       |                     | and error handling                        |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 21/09/18 | 13:00 | 14:00 | coding              | implemented command add file and          |
+|          |       |       |                     | commit -m                                 |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 21/09/18 | 15:00 | 16:40 | coding              | Implemented legit log to show commit      |
+|          |       |       |                     | messages                                  |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 21/09/18 | 19:00 | 19:15 | debugging           | Fix the error of saving commit            |
+|          |       |       |                     | messages, when it has ??, ??,             |
+|          |       |       |                     | or nothing                                |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 21/09/18 | 20:15 | 21:00 | coding              | Implemented show commit:filename,         |
+|          |       |       |                     | haven?t run the autotest yet              |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 21/09/18 | 21:00 | 22:00 | debugging           | Run the autotest of subset0, added        |
+|          |       |       |                     | error handling of add non-exit files      |
+|          |       |       |                     | and error handling in show                |
+|          |       |       |                     | commit:filename.Fixeded the output of     |
+|          |       |       |                     | ./legit log to correct order              |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 22/09/18 | 12:47 | 13:25 | Coding & debugging  | Tried to fix error handling ?nothing      |
+|          |       |       |                     | to commit?                                |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 22/09/18 | 14:30 | 14:45 | debugging           | Added function to check has commit or     |
+|          |       |       |                     | not, finished subset0                     |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 22/09/18 | 14:48 | 15:15 | coding              | Implemented commit -a -m message          |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 22/09/18 | 20:00 | 21:30 | coding              | Stared implement rm [--force]             |
+|          |       |       |                     | [--cached] filename, figure out how       |
+|          |       |       |                     | each command line works                   |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 23/09/18 | 15:00 | 16:00 | coding              | Implemented rm --cached                   |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 25/09/18 | 18:00 | 20:00 | Coding & debugging  | Implemented rm, run autotest of           |
+|          |       |       |                     | subset1 and fix the error handling        |
+|          |       |       |                     | of rm                                     |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 27/09/18 | 22:00 | 21:00 | coding              | Finish ./legit status except condition    |
+|          |       |       |                     | ?deleted? and ?file deleted?              |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 28/09/18 | 00:30 | 01:30 | debugging           | Change the storage of snapshot in the     |
+|          |       |       |                     |  .legit repo and finished subset1         |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 28/09/18 | 01:40 | 02:00 | Coding & debugging  | Modified rm and fix error handling for    |
+|          |       |       |                     | rm add(when the file actually not exist,  |
+|          |       |       |                     | error ?cannot open such file? or rm)      |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 28/09/18 | 16:00 | 18:00 | coding              | Started doing subset2, because the        |
+|          |       |       |                     | implementation before do not consider     |
+|          |       |       |                     | has different branch, change the          |
+|          |       |       |                     | implementation of subset0 and subest      |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 28/09/18 | 18:15 | 19:30 | Coding & debugging  | Implemented command branch [-d]           |
+|          |       |       |                     | [filename], add error handling for        |
+|          |       |       |                     | create new branch, delete branch and      |
+|          |       |       |                     | add create branch in command line         |
+|          |       |       |                     | commit                                    |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 28/09/18 | 19:30 | 20:00 | coding              | Stared doing checkout branch, switch      |
+|          |       |       |                     | branch to new branch.                     |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 29/09/18 | 00:30 | 01:30 | debugging           | Founded switch between different          |
+|          |       |       |                     | branch don?t actually affect the count    |
+|          |       |       |                     | of commits numbers, tried to find a       |
+|          |       |       |                     | way to do the commit numbers increment    |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 30/09/18 | 1:00  | 1:31  | testing             | Found the order of log is                 |
+|          |       |       |                     | incorrect, and fixed it, found the        |
+|          |       |       |                     | nothing to commit in commit -a -m         |
+|          |       |       |                     | doesn?t work, try to fix it               |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 30/09/18 | 1:51  | 2:05  | debugging           | Fixed the bug in commit -a -m, now        |
+|          |       |       |                     | commit -a -m can detect when nothing      |
+|          |       |       |                     | to commit correctly                       |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 30/09/18 | 14:04 | 16:30 | Testing & debugging | Found bug in the commiting, when          |
+|          |       |       |                     | index doesn?t exist. Commit -a -m         |
+|          |       |       |                     | add ?file deleted? file, rm it from       |
+|          |       |       |                     | index                                     |
++----------+-------+-------+---------------------+-------------------------------------------+
+| 01/10/18 | 15:49 | 19:00 | Testing & debugging | Fixed error handling for if               |
+|          |       |       |                     | ./legit exist, if there has               |
+|          |       |       |                     | commit yet, when should we show           |
+|          |       |       |                     | usage ect...                              |
++----------+-------+-------+---------------------+-------------------------------------------+
