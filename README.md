@@ -5,7 +5,7 @@ Git is a very complex program which has many individual commands. This project w
 <h1>Legit Commands</h1>
 
 <h3>legit-init</h3>
-The <b>legit-init</b> command creates an empty Legit repository. legit-init should create a directory named **.legit** which it will use to store the repository. It will produce an error message if this directory already exists
+<p>The <b>legit-init</b> command creates an empty Legit repository. legit-init should create a directory named **.legit** which it will use to store the repository. It will produce an error message if this directory already exists</p>
 
 <h3>legit-add filenames</h3>
 The **legit-add** command adds the contents of one or more files to the **"index"**.
